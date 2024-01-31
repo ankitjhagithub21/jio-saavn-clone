@@ -9,6 +9,7 @@ import Player from './components/Player';
 import "./App.css"
 import { useSelector } from 'react-redux';
 
+
 const App = () => {
   const song = useSelector((state)=>state.song.value)
   return (

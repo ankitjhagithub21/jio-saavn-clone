@@ -6,13 +6,28 @@ body {
 
 }
 
-::-webkit-scrollbar {
-  display: none;
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
-.album {
-  cursor: pointer;
+::-webkit-scrollbar{
+  display: none;
 }
+.album{
+  width: 180px;
+  min-width: 180px;
+}
+
+.album-container{
+  display: flex;
+  overflow-x: scroll;
+}
+
 
 .album h5 {
   font-size: 15px;
@@ -40,7 +55,7 @@ body {
 }
 
 progress {
-  /*  */
+  
   
   height: 5px;
 }
@@ -70,7 +85,7 @@ progress[value]::-webkit-progress-value {
   right: 15px;
   top: 5px;
 
-  background-color: #2BC5B4;
+  
 }
 
 .hide {

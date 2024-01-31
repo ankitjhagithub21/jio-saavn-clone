@@ -31,7 +31,7 @@ const Album = ({ id,name,image,type }) => {
         
     }
     return (
-        <div className="col-lg-2 col-md-4 col-6 p-2 album" onClick={handleClick}>
+        <div className="p-2 album" onClick={handleClick}>
             <img src={image} alt={name} className='img-fluid rounded' />
             <h5 className='text-center'>{name.split('(')[0]}</h5>
         </div>
